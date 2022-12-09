@@ -1,0 +1,13 @@
+.al_lado {
+    width: auto !important;
+    display: inline !important;
+}
+
+.nombre_menu {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-weight: bold;
+}

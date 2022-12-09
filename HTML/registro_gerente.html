@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Registro Gerente </title>
+    <link rel="stylesheet" href="../css/registro_gerente.css">
+    <meta charset="ufr-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+
+    <body id="todo">
+        <header id="encabezado">
+            <nav>
+                <div class="navegador-izq">
+                    <img src="../imagenes/logo.png" class="logo" />
+                </div>
+                <div class="navegador-der">
+                    <a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <section>
+                <div>
+                    <form method="get">
+                        <div id="fondo_amarillo">
+                            <h1 id="titulo">Registrar Gerente</h1>
+                            <div id="contenedor">
+                                <div class="columna">
+                                    <p>
+                                        <label for="txt_nombre">Nombre Completo</label>
+                                        <input id="txt_nombre" type="text" name="Nombre" maxlength="10" placeholder="Nombre Completo" required/></p>
+                                    <p>
+                                        <label for="txt_corre">Correo Electronico</label>
+                                        <input id="txt_correo" type="email" name="Correo" placeholder="Correo electronico" required/></p>
+                                    <p>
+                                        <label for="txt_redes">Redes Sociales</label>
+                                        <input id="txt_redes" type="text" name="Redes Sociales" placeholder="Redes sociales" /></p>
+                                    <p>
+                                        <label for="txt_fecha">Fecha de nacimiento</label>
+                                        <input id="txt_fecha" type="date" name="Fecha" placeholder="Fecha de nacimiento" required/></p>
+                                </div>
+                                <div class="columna">
+                                    <p>
+                                        <label for="txt_identificacion">Identificación</label>
+                                        <input id="txt_identificacion" type="number" name="cedula" placeholder="Identificación" required/></p>
+                                    <p>
+                                        <label for="txt_tipo">Tipo de Identificación</label>
+                                        <select name="txt_tipo" id="txt_tipo">
+                                <option value="Nacional">Cédula Nacional</option>
+                                <option value="Residencia">Cédula de Residencia</option>
+                            </select>
+                                        <p>
+                                            <label for="txt_telefono">Teléfono</label>
+                                            <input id="txt_telefono" type="number" name="telefono" placeholder="Número de teléfono" required/></p>
+                                </div>
+                                <div class="columna">
+                                    <p> <label>Añadir foto</label></p>
+                                    <img id="foto_perfil" src="">
+                                    <input id="Registrarse" type="button" value="Registrarse">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </section>
+            <footer>
+                <div class="contenedor-footer overflow">
+                    <div class="contenedor-footer_logo ">
+                        <img src="../imagenes/logo.png" class="logo"/>
+                        <div class="contenedor-footer_redes">
+                            <i class="fab fa-facebook fa-lg"></i>
+                            <i class="fab fa-twitter-square fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="contenedor-footer_cuenta">
+                        <h2 class="padding-bottom_small padding-top_small">Tu cuenta</h2>
+                        <p><a href="../html/informacionP.html">Tu perfil</a></p>
+                    </div>
+                    <div class="contenedor-footer_nosotros">
+                        <h2 class="padding-bottom_small padding-top_small">Sobre Nosotros</h2>
+                        <p><a href="../html_lp/index.html">Información del grupo</a></p>
+                        <p><a href="../index.html">Información de la app</a></p>
+                    </div>
+                    <div class="contenedor-footer_contactenos">
+                        <h2 class="padding-bottom_small padding-top_small">Contáctenos</h2>
+                        <p><a href="../html_lp/contacto.html">Contacto del grupo</a></p>
+                        <p><a href="../html/contactenos.html">Contacto de la aplicación</a></p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://kit.fontawesome.com/9e58ca6d40.js" crossorigin="anonymous"></script>
+        <script src="../JavaScript/registro_gerente.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,146 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Imagenes/graywall.jpg);
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+div {
+    box-sizing: border-box;
+}
+.caja {
+	overflow: auto;
+}
+
+nav{
+    z-index: 100;
+    overflow: auto;
+    width:100vw;
+    background-color: #F5F5F5;
+    opacity: 1;
+    position: fixed;
+}
+
+.navegador-izq{
+    float: left;
+    width:50%;
+    padding-left: 2vw;
+}
+
+.navegador-der{
+    float: left;
+    width:45%;
+    text-align:right;
+    margin-top: 13px;
+}
+
+.logo{
+    padding: 7px;
+    width: 160px;
+    height:auto;
+}
+
+.opcion-nav{
+    display: inline;
+    padding-left: 14px;
+    padding-right: 7px;
+    color: black; 
+}
+
+.separador-nav{
+    display: inline;
+}
+
+.opcion-nav:hover{
+    
+    color: #FCA444;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:white;
+}
+
+.fondo {	
+    background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+}
+
+.centro {
+    overflow: auto;
+	background-color: #F5F5F5;
+	position: absolute;
+	left: 35%;
+	right: 35%;
+	top: 20%;
+	text-align: justify;
+	padding: 2%;
+    border-radius: 10px;
+}
+
+.centro h1 {
+	text-align: center;
+}
+
+.centro input {
+	display: block;
+}
+
+.centro button {
+	margin-top: 5%;
+}
+.centrar {
+    text-align: center;
+}
+button {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-weight: 10;
+    font-size: 15px;
+    color: black;
+    border-radius: 6px;
+    background-color: #FFE457; 
+    border: 2px solid #FCA444;
+}
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FCA444;
+    border: 2px solid #FFE457;
+}
+.texto-rojo {
+    color: red;
+}
+.ocultar {
+    display: none;
+}
+.boton {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 15px;
+    color: black;
+    border-radius: 6px;
+    background-color: #FFE457; 
+    border: 2px solid #FCA444;
+}
+.boton:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FCA444;
+    border: 2px solid #FFE457;
+}
+.verificacion {
+    font-size: 12px;
+}
+.float-iz {
+    width: 50%;
+    float: left;
+}
+.float-de {
+    width: 50%;
+    float: right;
+}

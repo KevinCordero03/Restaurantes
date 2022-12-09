@@ -1,0 +1,249 @@
+/* Ajustes basicos de pagina*/
+body, h1, h2, h3, h4, h5, p{
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.icons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Contenedores de uso global*/
+.contenedor-izq{
+    float: left;
+    width:50%;
+}
+.contenedor-der{
+    float: left;
+    width:50%;
+}
+.center{
+    text-align:center;
+}
+.padding-bottom{
+    padding-bottom: 15vh;
+}
+.padding-bottom_small{
+    padding-bottom:5vh;
+}
+.padding-top{
+    padding-top:15vh;
+}
+.padding-top_small{
+    padding-top: 5vh;
+}
+/******************************/
+/*Navegador*/
+
+nav{
+    overflow: auto;
+    width:100vw;
+    background-color: #F5F5F5;
+    opacity: 1;
+    position: fixed;
+    border-bottom: 1px solid black;
+    z-index: 100;
+}
+.navegador-izq{
+    float: left;
+    width:50%;
+    padding-left: 2vw;
+}
+.navegador-der{
+    float: left;
+    width:40%;
+    text-align: right;
+    margin-top: 19px;
+}
+.logo{
+    width: 160px;
+    height:auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.opcion-nav{
+    display: inline;
+    padding-left: 14px;
+    padding-right: 7px;
+    color: black;
+    
+}
+.separador-nav{
+    display: inline;
+}
+.opcion-nav:hover{
+    
+    color: #FCA444;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:white;
+}
+/* Primera parte Landing Page*/
+.contenedor-seccion1{
+    background-image: url(../imagenes/restaurante.jpg);
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+}
+.titulo-seccion1{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+}
+.lema-seccion1{
+    padding-top:30px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+
+/* Segunda parte Landing Page*/
+.contenedor-seccion2{
+    overflow: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color:#FFFFFF;
+}
+.mision{
+    text-align: left;
+    padding-left: 2em;
+    padding-top: 5%;
+}
+.mision-texto{
+    text-align:left;
+    padding-left:12em;
+    padding-right: 10em;
+}
+.vision{
+    padding-left: 1.7em;
+    padding-top: 20%;
+    padding-right: 2em;
+    
+}
+.vision-texto{
+    padding-right:10em;
+    padding-left: 10em;
+    
+}
+
+/*seccion 3 Landing Page*/
+.contenedor-seccion3{
+    
+    background-color:#F5F5F5;
+}
+.titulo-seccion3{
+    padding-top:10vh;
+    padding-bottom:10vh;
+}
+.img-sec3{
+    width: 50%;
+    height:auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    
+    
+}
+
+
+.contenedor-izq_seccion3{
+    float: left;
+    width:45%;
+    padding-left: 9vw;
+    padding-top: 5vh;
+}
+.contenedor-der_seccion3{
+    float: left;
+    width:45%;
+    padding-left: 0vw;
+    padding-top: 5vh;
+    
+}
+.overflow{
+    overflow: auto;
+    
+}
+
+
+
+
+/*seccion 4 Landing Page*/
+.header-seccion4{
+    background-color: #F5F5F5;
+}
+.titulo-sec4{
+    padding-top: 10vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10vh;
+    
+}
+.contenedor-seccion4{
+    padding-left: 9vw;
+}
+.subtitulo-sec4{
+    padding: 10vh 15vw 10vh 10vw;
+    
+}
+/*seccion 5 Landing Page*/
+.btn-registrar{
+    border-radius: 12px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition-duration: 0.5;
+    padding: 2vh;
+}
+.btn-registrar:hover{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background: yellow;
+    
+}
+.contenedor-seccion5{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+   
+}
+.texto-registro{
+    padding: 0 15vw 10vh 15vw;
+}
+footer{
+    background-color: #FCA444;
+    overflow: auto;
+}
+.contenedor-footer_logo{
+    padding-left: 3vw;
+    padding-top: 4vh;
+}
+.contenedor-footer_redes{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+}
+.contenedor-footer_logo, .contenedor-footer_cuenta, .contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    float: left;
+    width: 20%;
+}
+.contenedor-footer_cuenta, .contenedor-footer_nosotros{
+    border-right: 1px solid black;
+    padding-bottom: 4vw;
+}
+.contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    padding-left: 5vw;
+
+    
+}
+  
+
+    
+

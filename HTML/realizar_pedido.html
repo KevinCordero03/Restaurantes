@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>Realizar Pedido </title>
+    <link rel="stylesheet" href="../css/registro_gerente.css">
+    <meta charset="ufr-8">
+    <link rel="stylesheet" href="../css/realizar_pedido.css">
+    <link rel="stylesheet" href="../css/general_menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body id="todo">
+    <header id="encabezado">
+        <nav>
+            <div class="navegador-izq">
+                <img src="../imagenes/logo.png" class="logo" />
+            </div>
+            <div class="navegador-der">
+                <a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><img src="../Imagenes/logo.png" class="logo"></a>
+        <a href="../HTML/realizar_pedido.html">Relizar Pedido</a>
+        <a href="../HTML/ver_pedido.html">Ver Pedido</a>
+        <a href="../HTML/ordenes.html">Órdenes</a>
+        <a href="../HTML/ver_factura.html">Ver Factura</a>
+        </div>
+        <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i> </span>
+
+    </header>
+    <main>
+        <section id="main">
+            <div>
+                <form method="get">
+                    <div id="fondo_amarillo">
+                        <h1 id="titulo">Realizar pedido</h1>
+                        <div id="contenedor">
+                            <div class="dos_columnas">
+                                <label for="txt_Restaurante">Restaurantes</label>
+                                <select name="txt_Restaurante" id="txt_Restaurante">
+                                    <option value="Casa_Azul">Casa Azul</option>
+                                 <option value="McDonald's">McDonald's</option>
+                                    <option value="Casa_Manga">Casa Manga</option>
+                                </select>
+                                <label id="lbl_acompanantes" for="txt_Cantidad_de_acompanantes">Cantidad de acompañantes</label>
+                                <input id="txt_Cantidad_de_acompanantes" type="number" min="0">
+                            </div>
+                            <div class="dos_columnas">
+                                <label for="txt_tipo_Pedido">Tipo de pedido</label>
+                                <select name="txt_tipo_Pedido" id="txt_tipo_Pedido" onchange="cambiar_tipo_pedido()">
+                                    <option value="Reservacion">Reservación</option>
+                                    <option value="Para_llevar">Para llevar</option>
+                               </select>
+
+                                <label for="txt_Fecha_y_Hora">Fecha y hora </label>
+                                <input id="txt_Fecha_y_Hora" type="datetime-local">
+                            </div>
+                        </div>
+                        <h4>Platillos</h4>
+                        <div id="contenedor">
+                            <div class="columna">
+                                <div class="centrado">
+                                    <img src="../imagenes/flautas.jpg" class="img_platillo">
+                                    <p><label for="txt_Flautas">Flautas </label>
+                                        <input class="linea" type="number" id="chk_Flauta" value="0"></p>
+                                </div>
+                                <div class="centrado">
+                                    <img src="../imagenes/Papitas.jpg" class="img_platillo">
+                                    <p><label for="txt_Pollo_papas">Pollo Frito con papas </label>
+                                        <input class="linea" type="number" min="0" id="chk_Pollo_papas" value="0"></p>
+                                </div>
+                            </div>
+                            <div class="columna">
+                                <div class="centrado">
+                                    <img src="../imagenes/pollo.jpg" class="img_platillo">
+                                    <p><label for="txt_Pollo">Fajitas de pollo</label>
+                                        <input class="linea" type="number" min="0" id="chk_fajitas_pollo" value="0"></p>
+                                </div>
+                                <div class="centrado">
+                                    <img src="../imagenes/hamburguesa.jpg" class="img_platillo">
+                                    <p><label for="txt_Hamburguesa">Hamburguesa con papas </label>
+                                        <input class="linea" type="number" min="0" id="chk_hamburguesa" value="0"></p>
+                                </div>
+                            </div>
+                            <div class="columna">
+                                <div class="centrado">
+                                    <img src="../imagenes/lasana.jpg" class="img_platillo">
+                                    <p><label for="txt_Lasana">Lasaña </label>
+                                        <input class="linea" type="number" min="0" id="chk_lasana" value="0"></p>
+                                </div>
+                                <div class="centrado">
+                                    <img src="../imagenes/Tacos.jpg" class="img_platillo">
+                                    <p><label for="txt_Tacos">Tacos </label>
+                                        <input class="linea" type="number" min="0" id="chk_tacos" value="0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="Registrarse" type="button" value="Realizar pedido">
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer overflow">
+            <div class="contenedor-footer_logo ">
+                <img src="../imagenes/logo.png" class="logo"/>
+                <div class="contenedor-footer_redes">
+                    <i class="fab fa-facebook fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                </div>
+            </div>
+            <div class="contenedor-footer_cuenta">
+                <h2 class="padding-bottom_small padding-top_small">Tu cuenta</h2>
+                <p><a href="../html/informacionP.html">Tu perfil</a></p>
+            </div>
+            <div class="contenedor-footer_nosotros">
+                <h2 class="padding-bottom_small padding-top_small">Sobre Nosotros</h2>
+                <p><a href="../html_lp/index.html">Información del grupo</a></p>
+                <p><a href="../index.html">Información de la app</a></p>
+            </div>
+            <div class="contenedor-footer_contactenos">
+                <h2 class="padding-bottom_small padding-top_small">Contáctenos</h2>
+                <p><a href="../html_lp/contacto.html">Contacto del grupo</a></p>
+                <p><a href="../html/contactenos.html">Contacto de la aplicación</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/9e58ca6d40.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/realizar_pedido.js"></script>
+    <script src="../JavaScript/nav.js"></script>
+</body>
+
+</html>

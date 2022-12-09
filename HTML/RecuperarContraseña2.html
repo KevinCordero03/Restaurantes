@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/RecuperarContraseña2.css">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/43e27dbd47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="caja">
+		<div class="navegador-izq">
+			<img src="../Imagenes/logo.png" class="logo">
+		</div>
+		<div class="navegador-der">
+			<a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+		</div>
+	</nav>
+	<div class="caja fondo">
+		<div class="centro">
+			<h1 class="centrar">Recuperar contraseña</h1>
+			<form method="get" onsubmit="leerFormulario(event)">
+				<div class="float-iz">
+					<p>Contraseña nueva</p>
+					<input type="text" name="nueva" id="nueva" size="15">
+					<div class="float-de">
+                        <button type="button" onclick="mostrarContrasena()" class="mostrar" id="contra"><i
+                                class="far fa-eye-slash" id="mostrar"></i></button>
+                    </div>
+					<div class="ocultar texto-rojo" id="nuevaError">
+						<strong>
+							<p class="verificacion">Contraseña incompleta</p>
+						</strong>
+					</div>
+				</div>
+				<div class="float-de">
+					<p>Verificar contraseña</p>
+					<input type="text" name="Verificar" id="verificar" size="15">
+					<div class="float-de">
+                        <button type="button" onclick="mostrarContrasena2()" class="mostrar" id="contra2"><i
+                                class="far fa-eye-slash" id="mostrar"></i></button>
+                    </div>
+					<div class="ocultar texto-rojo" id="diferente">
+						<strong>
+							<p class="verificacion">Contraseña distinta a la original</p>
+						</strong>
+					</div>
+					<div class="ocultar texto-rojo" id="verificarError">
+						<strong>
+							<p class="verificacion">Contraseña incompleta</p>
+						</strong>
+					</div>
+				</div>
+				<div>
+                    <br/><br/><br/><br/><br/><br/>
+					<p class="centrar"><button type="submit" class="boton">Cambiar contraseña</button></p>
+					<div class="ocultar" id="completo">
+						<strong>
+							<p class="verificacion centrar">Contraseña modificada con éxito</p>
+						</strong>
+					</div>
+					<div class="ocultar texto-rojo" id="incompleto">
+						<strong>
+							<p class="verificacion centrar">Faltan campos por llenar</p>
+						</strong>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="../JavaScript/RecuperarContraseña2.js"></script>
+</body>
+
+</html>

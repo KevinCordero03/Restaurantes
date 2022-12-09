@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/registrarRestaurante.css">
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<div class="navegador-izq">
+				<a href="home.html"><img src="../imagenes/logo.png" class="logo"><a>
+			</div>
+		    <div class="navegador-der">
+		        <<a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+				<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+				<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+				<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+				<h1 class="separador-nav ">|</h1>
+				<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+				<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+			</div>
+		</nav>
+		<br>
+		<div id="mySidenav" class="sidenav">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	        <a href="index.html" ><img src="../imagenes/logo.png" class="logo"></a>
+	        <a href="..//HTML/registrarRestaurante.html">Registrar restaurante</a>
+	        <a href="../HTML/administrarRestaurantes.html">Administrar restaurantes</a>
+	        
+	    </div>
+		<span onclick="openNav()"><i class="fas fa-bars fa-2x icono"></i> </span>
+	    <div id="main">
+	    </div>
+		<!--
+		<div class="tab">
+			<button class="tablinks" onclick="opciones(event, 'registrar')" id="defaultOpen">Registrar restaurante</button>
+			<button class="tablinks" onclick="opciones(event, 'modificar')">Modificar restaurante</button>
+		</div>
+		-->
+		<div id="registrar" class="pad caja">
+			<form method="get" class="form" onsubmit="leerFormulario(event)">
+				<h1>Registrar restaurante</h1>
+				<div class="izq">
+					<p>Nombre del restaurante</p>
+					<input type="text" name="nombre" id="nombre">
+					<div class="ocultar rojo" id="nombreError">
+						<div>Campo vacío</div>
+					</div>
+					<p>Nombre comercial</p>
+					<input type="text" name="comercial" id="comercio">
+					<div class="ocultar rojo" id="comercioError">
+						<div>Campo vacío</div>
+					</div>
+					<p>Cédula jurídica</p>
+					<input type="text" name="cedula" id="cedula">
+					<div class="ocultar rojo" id="cedError">
+						<div>Campo vacío</div>
+					</div>
+					<p>Ubicación escrita</p>
+					<input type="text" name="ubicacion" id="ubicacion">
+					<div class="ocultar rojo" id="ubicacionError">
+						<div>Campo vacío</div>
+					</div>
+				</div>
+				<div class="der">
+					<p>Coordenadas</p>
+					<input type="text" name="coordenadas" id="coordenadas">
+					<div class="ocultar rojo" id="coordenadasError">
+						<div>Campo vacío</div>
+					</div>
+					<p>Añadir foto</p><br>
+					<input class="block" type="file" name="archivo" id="archivo">
+					<div class="ocultar rojo" id="imgError">
+						<div>Campo vacío</div>
+					</div>
+						<img class="imagen block1" id="imagen"><br><br>
+					<button type="submit" class="button button1">Registrar platillo</button>
+					<div class="ocultar cafe" id="exito">
+						<p>Restaurante registrado con éxito!</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<div class="contenedor-footer overflow">
+				<div class="contenedor-footer_logo ">
+					<img src="../imagenes/logo.png" class="logo"/>
+					<div class="contenedor-footer_redes">
+						<i class="fab fa-facebook fa-lg"></i>
+						<i class="fab fa-twitter-square fa-lg"></i>
+					</div>
+				</div>
+				<div class="contenedor-footer_cuenta">
+					<h2 class="padding-bottom_small padding-top_small">Tu cuenta</h2>
+					<p><a href="../html/informacionP.html">Tu perfil</a></p>
+				</div>
+				<div class="contenedor-footer_nosotros">
+					<h2 class="padding-bottom_small padding-top_small">Sobre Nosotros</h2>
+					<p><a href="../html_lp/index.html">Información del grupo</a></p>
+					<p><a href="../index.html">Información de la app</a></p>
+				</div>
+				<div class="contenedor-footer_contactenos">
+					<h2 class="padding-bottom_small padding-top_small">Contáctenos</h2>
+					<p><a href="../html_lp/contacto.html">Contacto del grupo</a></p>
+					<p><a href="../html/contactenos.html">Contacto de la aplicación</a></p>
+				</div>
+			</div>
+		</footer>
+		<script src="../JavaScript/registrarRestaurante.js"></script>
+	</body>
+</html>

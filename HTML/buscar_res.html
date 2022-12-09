@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/buscar_res.css">
+    <script src="../javascript/nav.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+
+    <title>Restaurantes</title>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" ><img src="../imagenes/logo.png" class="logo"></a>
+        <a href="crear_menu.html">Crear menu</a>
+        <a href="Reservas.html">Reservas</a>
+        <a href="registrarRestaurante.html">Registrar Restaurante</a>
+        <a href="registrarPlatillo.html">Registrar Platillo</a>
+        <a href="buscar_res.html">Búsqueda</a>
+        
+    </div>
+    
+
+    
+    <nav>
+        
+        <div class="navegador-izq">
+         
+           <a href="home.html"> <img src="../imagenes/logo.png" class="logo" /></a>
+        </div>
+        <div class="navegador-der">
+            <a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+            
+        </div>
+     
+    </nav>
+    <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i> </span>
+    <div id="main">
+        <div class="outerbox-search">
+            <form class="searchContainer">
+                <i class="fa fa-search searchIcon"></i>
+                <input class="searchBox" type="search" name="search" placeholder="Buscar..." id="searchbar">
+            </form>
+        </div>
+        <div class="rest-container" id="rest-cont">
+            <div class="outerbox-search">
+                <form class="searchContainer">
+                    <i class="fa fa-search searchIcon"></i>
+                    <input class="searchBox" type="search" name="search" placeholder="Buscar..." id="searchbar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor-footer overflow">
+            <div class="contenedor-footer_logo ">
+                <img src="../imagenes/logo.png" class="logo"/>
+                <div class="contenedor-footer_redes">
+                    <i class="fab fa-facebook fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                </div>
+            </div>
+            <div class="contenedor-footer_cuenta">
+                <h2 class="padding-bottom_small padding-top_small">Tu cuenta</h2>
+                <p><a href="../html/informacionP.html">Tu perfil</a></p>
+            </div>
+            <div class="contenedor-footer_nosotros">
+                <h2 class="padding-bottom_small padding-top_small">Sobre Nosotros</h2>
+                <p><a href="../html_lp/index.html">Información del grupo</a></p>
+                <p><a href="../index.html">Información de la app</a></p>
+            </div>
+            <div class="contenedor-footer_contactenos">
+                <h2 class="padding-bottom_small padding-top_small">Contáctenos</h2>
+                <p><a href="../html_lp/contacto.html">Contacto del grupo</a></p>
+                <p><a href="../html/contactenos.html">Contacto de la aplicación</a></p>
+            </div>
+        </div>
+    </footer>
+      <script src="../javascript/restaurantes.js"></script>
+</body>
+</html>

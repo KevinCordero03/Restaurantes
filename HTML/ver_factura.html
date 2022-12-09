@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Factura</title>
+    <link rel="stylesheet" href="../css/registro_gerente.css">
+    <meta charset="ufr-8">
+    <link rel="stylesheet" href="../css/factura.css">
+    <link rel="stylesheet" href="../css/general_menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body id="todo">
+    <header id="encabezado">
+        <nav>
+            <div class="navegador-izq">
+                <img src="../imagenes/logo.png" class="logo" />
+            </div>
+            <div class="navegador-der">
+                <a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section id="main">
+            <div>
+                <form method="get">
+                    <div id="fondo_amarillo" class="centrar_texto">
+                        <h1 id="titulo">Factura del pedido </h1>
+                        <p>
+                            <label for="txt_nombre">Nombre Completo</label>
+                            <input id="txt_nombre" type="text" name="Nombre" maxlength="10" placeholder="Nombre Completo" value="Carlos Fonseca " disabled/></p>
+                        <p>
+                            <label for="txt_fecha">Fecha y hora </label>
+                            <input id="txt_fecha" type="datetime-local" name="Fecha" placeholder="Fecha y hora " disabled/></p>
+                        <p>
+                            <label for="txt_nombre">Restaurante</label>
+                            <input id="txt_restaurante" type="text" name="Nombre" maxlength="10" placeholder="Restaurante" disabled/></p>
+                        <p>
+                            <label for="txt_acompanates">Cantidad de acompañantes</label>
+                            <input id="txt_acompanates" type="number" disabled></p>
+                        <div class="centrar_tabla">
+                            <table class="tabla_factura">
+                                <thead>
+                                    <tr>
+                                        <th>Platillo</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="factura">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../JavaScript/ver_factura.js"></script>
+    <script src="../JavaScript/nav.js"></script>
+    <script src="https://kit.fontawesome.com/9e58ca6d40.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

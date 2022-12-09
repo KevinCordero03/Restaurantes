@@ -1,0 +1,229 @@
+/* Ajustes basicos de pagina*/
+body, h1, h2, h3, h4, h5, p{
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+}
+a{
+  text-decoration:none;
+  color: black;
+}
+/* Contenedores de uso global*/
+.contenedor-izq{
+  float: left;
+  width:50%;
+}
+.contenedor-der{
+  float: left;
+  width:50%;
+}
+.center{
+  text-align:center;
+}
+.padding-bottom{
+  padding-bottom: 15vh;
+}
+.padding-bottom_small{
+  padding-bottom:5vh;
+}
+.padding-top{
+  padding-top:15vh;
+}
+.padding-top_small{
+  padding-top: 5vh;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 95; 
+    top: 0; 
+    left: 0;
+    background-color: #FCA444; 
+    overflow-x: hidden; 
+    padding-top: 150px; 
+    transition: 0.5s; 
+  
+  }
+  
+  /*links del menu */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* posicion y estilo del boton de cerrar */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 100px;
+  }
+  
+/***********************/
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+/*icono*/
+.fa-bars{
+  position: fixed;
+  margin-top: 10vh;
+}
+/*Navegador*/
+
+nav{
+  overflow: auto;
+  width:100vw;
+  background-color: #F5F5F5;
+  opacity: 1;
+  position: fixed;
+  border-bottom: 1px solid black;
+  z-index: 100;
+}
+.navegador-izq{
+  float: left;
+  width:40%;
+  padding-left: 2vw;
+}
+.navegador-der{
+  float: left;
+  width:50%;
+  text-align: right;
+  margin-top: 19px;
+}
+.logo{
+  width: 160px;
+  height:auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.opcion-nav{
+  display: inline;
+  padding-left: 14px;
+  padding-right: 7px;
+  color: black;
+  
+}
+.separador-nav{
+  display: inline;
+}
+.opcion-nav:hover{
+  
+  color: #FCA444;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color:white;
+}
+
+/* main content*/
+.searchContainer {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-right: 70%
+  
+}
+.outerbox-search{
+    background-color: grey;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 40px;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+}
+
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  padding-right: 650%;
+}
+
+.restaurante{
+    display: inline-block;
+}
+.img-rest{
+    height: auto;
+    width: 400px;
+    padding-top: 25px;
+    
+}
+.img-rest:hover{
+  width:420px
+}
+.titulo-res{
+    
+    width: 50%;
+    padding-left: 50px;
+   
+    
+}
+.nombre-res:hover{
+  
+  text-shadow: 2px 2px yellow;
+  
+  
+  display:inline-block;
+ 
+}
+
+.lista{
+  border-bottom: 2px solid black;
+  
+}
+
+
+body{
+    background-color: #F5F5F5;
+}
+.restaurante{
+    display: inline-block;
+    width: 40%;
+}
+.descripcion{
+  padding-top:20px;
+}
+footer{
+  background-color: #FCA444;
+  overflow: auto;
+}
+.contenedor-footer_logo{
+  padding-left: 3vw;
+  padding-top: 4vh;
+}
+.contenedor-footer_redes{
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  padding-left: 2vh;
+}
+.contenedor-footer_logo, .contenedor-footer_cuenta, .contenedor-footer_nosotros, .contenedor-footer_contactenos{
+  float: left;
+  width: 20%;
+}
+.contenedor-footer_cuenta, .contenedor-footer_nosotros{
+  border-right: 1px solid black;
+  padding-bottom: 4vw;
+}
+.contenedor-footer_nosotros, .contenedor-footer_contactenos{
+  padding-left: 5vw;
+
+  
+}

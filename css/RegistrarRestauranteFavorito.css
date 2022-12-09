@@ -1,0 +1,243 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Imagenes/graywall.jpg);
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+div {
+    box-sizing: border-box;
+}
+.caja {
+	overflow: auto;
+}
+
+nav{
+    z-index: 100;
+    overflow: auto;
+    width:100vw;
+    background-color: #F5F5F5;
+    position: fixed;
+}
+
+.navegador-izq{
+    float: left;
+    width:50%;
+    padding-left: 2vw;
+}
+
+.navegador-der{
+    float: left;
+    width:45%;
+    text-align:right;
+    margin-top: 13px;
+}
+
+.logo{
+    padding: 7px;
+    width: 160px;
+    height:auto;
+}
+
+.opcion-nav{
+    display: inline;
+    padding-left: 14px;
+    padding-right: 7px;
+    color: black; 
+}
+
+.separador-nav{
+    display: inline;
+}
+
+.opcion-nav:hover{
+    
+    color: #FCA444;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:white;
+}
+
+.fondo {	
+    background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+}
+
+.centro {
+    overflow: auto;
+	background-color: #F5F5F5;
+	position: absolute;
+	left:25%;
+	right: 30%;
+	top: 20%;
+	text-align: justify;
+	padding: 2% 2% 0px 2%;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.centro h1 {
+	text-align: center;
+}
+
+.centro input {
+	display: block;
+}
+
+.centro button {
+	margin-top: 5%;
+}
+.centrar {
+    text-align: center;
+}
+
+.texto-rojo {
+    color: red;
+}
+.ocultar {
+    display: none;
+}
+.boton {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 15px;
+    color: black;
+    border-radius: 6px;
+    background-color: #FFE457; 
+    border: 2px solid #FCA444;
+}
+.boton-2 {
+    text-decoration: none;
+    padding: 1px;
+    font-weight: 10;
+    font-size: 15px;
+    color: black;
+    border-radius: 6px;
+    background-color: #FFE457; 
+    border: 2px solid #FCA444;
+}
+.boton:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FCA444;
+    border: 2px solid #FFE457;
+}
+.boton-2:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FCA444;
+    border: 2px solid #FFE457;
+}
+.verificacion {
+    font-size: 15px;
+}
+.float-iz {
+    float: right;
+}
+.float-de {
+    float: left;
+}
+.mostrar {
+    position: relative;
+    left: 50px;
+    top: -22px;
+    text-decoration: none;
+    font-weight: 10;
+    font-size: 15px;
+    background-color: #FFE457; 
+    border: 2px solid black;
+}
+.float-iz {
+    float: left;
+}
+.float-de {
+    float: right;
+}
+.usando {
+    border: 2px solid red;
+
+}
+.foto {
+    width: 150px;
+}
+.subir {
+    border: 10px solid red;
+}
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 95; 
+    top: 0; 
+    left: 0;
+    background-color: #FCA444; 
+    overflow-x: hidden; 
+    padding-top: 150px; 
+    transition: 0.5s; 
+  
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 100px;
+  }
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+.fas2{
+  position: fixed;
+  margin-top: 15vh;
+}
+.pad {
+    margin: 0;
+}
+footer{
+    background-color: #FCA444;
+    overflow: auto;
+    width: 100%;
+}
+.contenedor-footer_logo{
+    padding-left: 3vw;
+    padding-top: 4vh;
+}
+.contenedor-footer_redes{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+}
+.contenedor-footer_logo, .contenedor-footer_cuenta, .contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    float: left;
+    width: 20%;
+}
+.contenedor-footer_cuenta, .contenedor-footer_nosotros{
+    border-right: 1px solid black;
+    padding-bottom: 4vw;
+}
+.contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    padding-left: 5vw;
+
+    
+}

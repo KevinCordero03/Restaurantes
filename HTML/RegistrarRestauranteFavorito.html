@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/RegistrarRestauranteFavorito.css">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43e27dbd47.js" crossorigin="anonymous"></script>
+</head>
+
+<body scroll=no style="overflow-y:hidden">
+    <nav>
+        <div class="navegador-izq">
+            <a href="home.html"><img src="../imagenes/logo.png" class="logo" /></a>
+        </div>
+        <div class="navegador-der">
+            <a href="../HTML_LP/index.html" class="opcion-nav"> ¿Quiénes Somos? </a>
+			<a href="../HTML/realizar_pedido.html" class="opcion-nav"> Pedidos </a>
+			<a href="../HTML/contactenos.html" class="opcion-nav"> Contacto </a>
+			<a href="../HTML/buscar_res.html" class="opcion-nav"> Restaurantes </a>
+			<h1 class="separador-nav ">|</h1>
+			<a href="../HTML/informacionP.html" class="opcion-nav"><i class="fas fa-user"></i></a>
+			<a href="../index.html" class="opcion-nav"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </nav>
+    <span onclick="openNav()"><i class="fas fa-bars fa-2x fas2"></i></span>
+	<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><img src="../imagenes/logo.png" class="logo"></a>
+            <a href="../HTML/informacionP.html"> Información Personal</a>
+            <a href="../HTML/Restablecer contraseña.html">Cambiar Contraseña</a>
+            <a href="../HTML/ListarRestauranteFavorito.html">Restaurantes Favoritos</a>
+            <a href="../HTML/RegistrarRestauranteFavorito.html"> Registrar Restaurante Favorito</a>
+            <a href="../HTML/registrarT.html">Registrar Tarjeta</a>
+            <a href="ListarUsuarios.html"> Ver usuarios</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="../HTML/autorizarEncargado.html">Autorizar Encargado</a>
+    </div>
+    <div id="main">
+    </div>
+    <div class="caja fondo">
+        <div class="centro">
+            <h1 class="centrar">Registrar Restaurante Favorito</h1>
+            <form method="get" onsubmit="leerFormulario(event)">
+                <div class="float-iz">
+                    <p>Nombre</p>
+                    <input type="text" name="Nombre" id="nombre" size="15" />
+                    <div class="ocultar texto-rojo" id="nombreError">
+                        <strong>
+                            <p class="verificacion"><br />Nombre incompleto o inválido</p>
+                        </strong>
+                    </div>
+                    <p>Dirección</p>
+                    <input type="text" name="direccion" id="direccion" size="15" />
+                    <div class="ocultar texto-rojo" id="direccionError">
+                        <strong>
+                            <p class="verificacion">Dirección incompleta o inválida</p>
+                        </strong>
+                    </div>
+                </div>
+                <div class="float-de">
+                    <p>Agregar foto de Restaurante</p>
+                    <input type="file" name="imagen" id="foto" class="boton"/>
+                    <div class="ocultar texto-rojo" id="fotoError">
+                        <strong>
+                            <p class="verificacion">Foto incompleta</p>
+                        </strong>
+                    </div>
+                </div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <p class="centrar"><button type="submit" class="boton">Registrarse</button></p>
+                <div class="ocultar" id="completo">
+                    <strong>
+                        <p class="verificacion centrar">Restaurante registrado con éxito</p>
+                    </strong>
+                </div>
+                <div class="ocultar texto-rojo" id="incompleto">
+                    <strong>
+                        <p class="verificacion centrar">Faltan campos por llenar</p>
+                    </strong>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor-footer overflow">
+            <div class="contenedor-footer_logo ">
+                <img src="../imagenes/logo.png" class="logo"/>
+                <div class="contenedor-footer_redes">
+                    <i class="fab fa-facebook fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                </div>
+            </div>
+            <div class="contenedor-footer_cuenta">
+                <h2 class="padding-bottom_small padding-top_small">Tu cuenta</h2>
+                <p><a href="../html/informacionP.html">Tu perfil</a></p>
+            </div>
+            <div class="contenedor-footer_nosotros">
+                <h2 class="padding-bottom_small padding-top_small">Sobre Nosotros</h2>
+                <p><a href="../html_lp/index.html">Información del grupo</a></p>
+                <p><a href="../index.html">Información de la app</a></p>
+            </div>
+            <div class="contenedor-footer_contactenos">
+                <h2 class="padding-bottom_small padding-top_small">Contáctenos</h2>
+                <p><a href="../html_lp/contacto.html">Contacto del grupo</a></p>
+                <p><a href="../html/contactenos.html">Contacto de la aplicación</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../JavaScript/RegistrarRestauranteFavorito.js"></script>
+</body>
+
+</html>

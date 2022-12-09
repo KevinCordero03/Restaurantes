@@ -1,0 +1,250 @@
+div{
+    box-sizing: border-box;
+}
+p{
+    margin:0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+}
+h2{
+    margin:0;
+}
+
+.logo{
+    padding-left: 40px;
+  
+}
+
+.logo img{
+    width: 125px;
+}
+.menu{
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 50px;
+}
+.logo, .menu{
+    width: 50%;
+    float: left;
+}
+.menu a{
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+}
+.contenedor  {
+    border-bottom: 1px solid black;
+    overflow: auto;
+    
+}
+heading{
+    position: fixed;
+    width: 100%;
+    background-color: snow;
+    z-index: 100;
+    opacity: 0.9;
+}
+div{
+    box-sizing: border-box;
+}
+.texto-menu{
+    color: black;
+}
+.texto-menu:hover{
+    color:blue;
+    border-bottom: 1px solid blue;
+    
+}
+@keyframes chbg {
+    50%{
+        background:url(../../imagenes/imglp/newbg.jpg);
+       
+        height: 100vh;
+        background-size: cover;
+    }
+    50%{
+        background: url(../../imagenes/imglp/newbg-2.jpg);
+        
+        height: 100vh;
+        background-size: cover;
+    }
+}
+.bg{
+    background-image: url(../../imagenes/imglp/newbg.jpg);
+    
+    height: 100vh;
+    background-size: cover;
+    animation: chbg 2s infinite alternate;
+    
+}
+.icon{
+    width: 120px;
+}
+.titulo{
+    text-align: center;
+    background: rgb(167,167,167);
+    background: linear-gradient(0deg, rgba(167,167,167,1) 0%, rgba(237,237,237,1) 100%);
+    background-repeat: repeat-x;
+    background-image: url(../../imagenes/imglp/17580.jpg);
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: 1px groove goldenrod;
+}
+
+.contenedor-2{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-column: 1px;
+    grid-auto-columns: minmax(150px, auto);
+    grid-row-gap: 10px;
+    background: rgb(237,237,237);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5vh;
+    
+    
+}
+.valor{
+    
+    text-align: center;
+    box-shadow: 0 10px 10px;
+    background-image: url(../../imagenes/imglp/poli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+.valor:hover{
+    
+    transform: scale(1.05);
+}
+
+.valorwidth{
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.fondo-ti{
+    transition: all 0.5s ease;
+    color: black;
+    background-color : transparent;
+    font-size: 3.5rem;
+    display: inline-block;
+}
+.fondo-ti:hover{
+    letter-spacing: 15px;
+    
+}
+.contenedor-3{
+   padding-top: 7vh;
+   overflow: auto;
+   background-color: rgb(255,250,250);
+}
+.contenedor-4{
+    overflow: auto;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+.mision-text{
+    float: left;
+    width: 40%;
+    padding-left: 10vw;
+}
+.mision{
+    width: 60%;
+    float: left;
+    padding-left: 7.5vw;
+    
+}
+.vision-img{
+    height: auto;
+    width:28vw;
+    
+}
+.vision{
+    width: 40%;
+    float: left;
+    padding-left: 10vw;
+}
+.vision-text{
+    width: 60%;
+    float: left;
+    padding-left: 7.5vw;
+    padding-right: 20vw;
+}
+footer{
+    overflow: auto;
+    background-color: snow;
+}
+.footer-1{
+    float: left;
+    width: 50%;
+}
+.footer-2{
+
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+.footer-logo{
+    width: 150px;
+}
+.footer-icon{
+    width: 5vw;
+    padding-top: 5vh;
+}
+.footer-margin{
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+}
+.redes{
+    padding-top: 6vh;
+}
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(82, 82, 82);
+    border-radius: 20px;
+  }
+
+/*sobre nosotros*/
+.logo-center{
+    text-align: center;
+    padding-top: 10vh;
+}
+.grid-container{
+   overflow: auto;
+   text-align: center;
+    
+}
+.grid-obj{
+  float: left;
+  width: 33%;
+  padding-bottom: 2vh;
+}
+.img-size{
+    width: 450px;
+    height: 450px;
+}
+.vision-tit{
+    margin-bottom: 5vh;
+}

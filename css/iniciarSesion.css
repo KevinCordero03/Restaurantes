@@ -1,0 +1,197 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+nav{
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+    overflow: auto;
+    width:100vw;
+    background-color: #F5F5F5;
+    opacity: 1;
+    position: fixed;
+}
+
+.navegador-izq{
+    float: left;
+    width:50%;
+    padding-left: 2vw;
+}
+
+.navegador-der{
+    float: left;
+    width:45%;
+    text-align:right;
+    margin-top: 13px;
+}
+
+.logo{
+    width: 160px;
+    height:auto;
+}
+
+.opcion-nav{
+    display: inline;
+    padding-left: 14px;
+    padding-right: 7px;
+    color: black; 
+}
+
+.separador-nav{
+    display: inline;
+}
+
+.opcion-nav:hover{
+    
+    color: #FCA444;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:white;
+}
+
+.caja {
+	overflow: auto;
+}
+
+.background {
+	float: left;
+	background-image: url(../imagenes/bg.jpg);  
+	background-size: cover;
+	background-position: right;
+	width: 71%;	
+	height: 100%; 
+}
+
+.bgText {
+	margin: 0px;
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+ 	width: 40%;
+	padding: 20px;
+	text-align: center;
+}
+
+.logIn {
+	right: 10%;
+	left: 60%;
+	float: right;
+	text-align: justify-all;
+	padding: 12% 7% 12% 7%;
+}
+
+.logIn h1 {
+	text-align: center;
+	margin: 0;
+}
+
+.link {
+	font-size: x-small;
+	float: right;
+	padding: 1%;
+	transition: 0,5s;
+	cursor: pointer;
+}
+
+.link:hover {
+	background-color: #FCA444;
+	color: white;
+}
+
+.logIn input, .logIn button{
+	display: block;
+}
+
+.logIn input {
+	width: 100%;
+}
+
+.logIn button {
+	margin-top: 20%;
+}
+
+.logIn p {
+	margin-bottom: 0;
+}
+
+.peq {
+	font-size: medium;
+}
+
+.fondo {
+	background-color: #FCA444;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 4px;
+	border: none;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: white;
+	border: 1px solid #FCA444;
+	color: black;
+	text-align: center;
+	font-size: medium;
+	padding: 4% 10% 4% 10%;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -25px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 15px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button1:hover {
+	background-color: #FCA444;
+	color: white;
+}
+
+input[type=email],[type=password] {
+	margin: 8px 0;
+	border: none;
+	border-bottom: 2px solid black;
+	padding-top: 3%;
+}
+
+.rojo {
+	color: red;
+	font-size: small;
+}
+
+.ocultar {
+	display: none;
+}

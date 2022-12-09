@@ -1,0 +1,186 @@
+body {
+    background-image: url(../Imagenes/imgLP/graywall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.caja {
+	overflow: auto;
+}
+
+nav{
+    overflow: auto;
+    width:100vw;
+    background-color: #F5F5F5;
+    opacity: 0.7;
+    position: fixed;
+}
+
+.navegador-izq{
+    float: left;
+    width:50%;
+    padding-left: 2vw;
+}
+
+.navegador-der{
+    float: left;
+    width:45%;
+    text-align:right;
+    margin-top: 13px;
+}
+.logo{
+    padding: 7px;
+    width: 160px;
+    height:auto;
+}
+
+.opcion-nav{
+    display: inline;
+    padding-left: 14px;
+    padding-right: 7px;
+    color: black; 
+}
+
+.separador-nav{
+    display: inline;
+}
+
+.opcion-nav:hover{
+    
+    color: #FCA444;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:white;
+}
+.wrapper {
+    padding-bottom: 50px;
+    overflow: auto;
+}
+.proyecto {
+    padding-left: 200px;
+    padding-top: 150px;
+    width: 60%;
+}
+.imagen {
+    float: left;
+    width: 250px;
+}
+.direccion{
+    text-align: left;
+    font-size: 20px;
+}
+div {
+    box-sizing: border-box;
+}
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 95; 
+    top: 0; 
+    left: 0;
+    background-color: #FCA444; 
+    overflow-x: hidden; 
+    padding-top: 150px; 
+    transition: 0.5s; 
+  
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 100px;
+  }
+#main {
+    margin: 0;
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+.fas2{
+background-color: #FCA444;
+  position: fixed;
+  margin-top: 15vh;
+}
+.pad {
+    margin: 0;
+}
+.z {
+    z-index: 90;
+}
+.z2 {
+    z-index: 95;
+}
+footer{
+    background-color: #FCA444;
+    overflow: auto;
+    padding-bottom: 57px;
+    padding-top: 50px;
+    margin: 0;
+   
+}
+.contenedor-footer_logo{
+    padding-left: 3vw;
+    padding-top: 4vh;
+}
+.contenedor-footer_redes{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+}
+.contenedor-footer_logo, .contenedor-footer_cuenta, .contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    float: left;
+    width: 20%;
+}
+.contenedor-footer_cuenta, .contenedor-footer_nosotros{
+    border-right: 1px solid black;
+    padding-bottom: 4vw;
+}
+.contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    padding-left: 5vw;
+
+    
+}
+.center{
+    text-align:center;
+}
+.padding-bottom{
+    padding-bottom: 15vh;
+}
+.padding-bottom_small{
+    padding-bottom:5vh;
+}
+.padding-top{
+    padding-top:15vh;
+}
+.padding-top_small{
+    padding-top: 5vh;
+}
+.contenedor-footer {
+    margin: 0;
+}
+.overflow{
+    overflow: auto;
+}

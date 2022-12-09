@@ -1,0 +1,40 @@
+.centrar_texto {
+    text-align: center;
+}
+
+.centrar_tabla {
+    width: 50%;
+    margin: auto;
+}
+
+.tabla_factura {
+    width: 100%;
+    border: 1px
+}
+footer{
+    background-color: #FCA444;
+    overflow: auto;
+    width: 100%;
+}
+.contenedor-footer_logo{
+    padding-left: 3vw;
+    padding-top: 4vh;
+}
+.contenedor-footer_redes{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+}
+.contenedor-footer_logo, .contenedor-footer_cuenta, .contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    float: left;
+    width: 20%;
+}
+.contenedor-footer_cuenta, .contenedor-footer_nosotros{
+    border-right: 1px solid black;
+    padding-bottom: 4vw;
+}
+.contenedor-footer_nosotros, .contenedor-footer_contactenos{
+    padding-left: 5vw;
+
+    
+}
